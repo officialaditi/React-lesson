@@ -1,0 +1,26 @@
+ Hooks:- useEffect();
+
+ 1) this hook tell react to do some code when 
+    ===> component re-render
+    ===> component mounts
+    ===> state the value
+
+2) useEffect hook is used for side-effect like fetching api's, timer, DOM manipulation
+
+3) it have the function and dependency array
+   ==> useEffect(() =>{function()},) no dependency 
+   // it will run on every re-render things
+
+   ==> useEffect(() => {function()}, []) empty dependency
+   // run when the component render for the first time  (mounts) it will run only on mounts (render once)
+
+   ==> useEffect(() => {function()}, [value]) with value dependency
+   // it will run when the component get render and when the value get update or change
+
+4) uses:-
+  #) event listerner
+  #) DOM manipulation
+  #) subscriptions (real-time updates)
+  #) fetching data from api
+  #) clean up when component unmounts
+  

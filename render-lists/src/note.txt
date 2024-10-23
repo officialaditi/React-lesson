@@ -1,0 +1,9 @@
+1) we often want to display multiple similar component from the collection of data so to do that we will use JS array method to manipulate arry of data
+
+2) we will use filter() and map() with react to filter and transform your array of data into an array of components
+
+3) we will use map() method to loop over the array and get the new array of jsx node.
+
+4) to map() method we need to give an key() to it which should be unique so we can give id to the data or use the index number of array to use it but best way is to give the id.
+
+5) using filter() method to filter the product and it will returned the filter product to us.

@@ -1,0 +1,34 @@
+1) conditional rendering allow us to control on what gets rendered in your application based on the certain conditional (hide, show, or change components);
+
+2) we can conditionally render jsx using js syntax like (if statement), (&&), and (?:) operator.
+
+====>> if-else statement if(condition){} else {}
+*) it work same as if-else statement return the if statement (if condition is true) or return (else part)
+example:-
+if (isPacked) {
+  return <li className="item">{name} ✔</li>;
+}else {
+return <li className="item">{name}</li>;
+}
+
+
+====>> ternary operator ?:
+*) same if the condition is true it will return the part or it will return the else part
+example:- 
+return (
+  <li className="item">
+    {isPacked ? name + ' ✔' : name}
+  </li>
+);
+You can read it as “if isPacked is true, then (?) render name + ' ✔', otherwise (:) render name”.
+
+====>> logical AND operator (&&);
+*) it will render if the condition is true or it will render nothing if the condition is false
+example:-
+return (
+  <li className="item">
+    {name} {isPacked && '✔'}
+  </li>
+);
+
+You can read this as “if isPacked, then (&&) render the checkmark, otherwise, render nothing”.

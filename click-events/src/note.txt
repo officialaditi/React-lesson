@@ -1,0 +1,28 @@
+           onClick Event:- 
+
+1) click event is an interaction when user clicks on a specific element.
+
+2) we respond to click by passing the callback function on the onClick event Handler.
+
+3) we can use the arrow function to give the callback to perform after click the button or element
+example:-
+const handleClick = () => {
+    return alert("OUCH!");
+  };
+
+4) using the arrow function on button using onClick()
+example:-
+<button onClick={handleClick}>Click Me</button>
+
+5) parameter callback function = when we give the parameter callback function direactly it will render automatically without clicking on the element so to prevent this we have to wrap the callback function inside other function (arrow func also work) so it will prevent the pre render.
+example:-
+<button onClick={() => handleClick2("aditi")}>Click Me</button>
+because of this function it will render only when u click the element or button
+
+6) we can give the condition also for specific elements and perform the task
+
+7) changing the content after click on button so we will use (e)events that will change the content when we click
+example:- (e) => e.target.textContent = '';
+this is where we passing event(e) as parameter and it have a method (target) which have the (textContent) property which help us to change the textContent content
+target method of lots of property that we can use
+so we have to pass (e) as parameter and also passing to other arrow function also to run the event.

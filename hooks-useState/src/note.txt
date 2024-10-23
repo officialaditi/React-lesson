@@ -1,0 +1,65 @@
+1) Hooks = Hooks are the special feature that allow functional components to use React feature without writing the class components
+
+useState:- 
+1) it's an react hook that let us add state variable to your components.
+example:-
+const [state, setState] = useState(initialStatevalue);
+// we have used (array destructuring) and destructured the state and setState 
+ 
+>>>>>>>>>>>>>> initialState:-
+1) the value we want the start variable should have at the start
+example:- state = 0 or state = true 
+// for the initial stage.
+
+2) it can be a value of any type (number, bool, array, string etc);
+
+3) this argument is ignored after the initial render.
+
+4) if we pass the (initialStatevalue) it will be treated as initializer function.
+
+>>>>>>>>>>>>>>> what Return
+1) useState Return an array with exactly two values:
+   ---> the current state.
+   during the 1st render it will match with the initial value we have passed
+   ---> the (set) function that let us update the state to different value and trigger a re-render
+
+>>>>>>>>>>>>>>> set function :-
+                setSomething(nextState)
+
+1) the (set) function returned by useState and let us update the state to a different value and trigger re-render of the components
+
+2) we can give next state value direactly or function that calculate it from previous value.
+
+>>>>>>>>>>>>>> nextState:-
+1) it an value that we want to be an state after change.
+
+>>>>>>>>>>>>> Return 
+            set function do not have a return value.
+
+############# Example:-
+import { useState } from 'react';
+
+function MyComponent() {
+  const [age, setAge] = useState(42);
+  const [name, setName] = useState('Taylor');
+  return (
+    <>
+    <h1>hooks</h1>
+    </>
+  )
+}
+export default MyComponent;
+
+===> currentState (age) of this state variable, initially set to initial state value we provided 
+example:- age = 42(initialValue)
+
+===> setFunction (setAge) allow us to change it to any other value in response to interaction.
+
+===> initialState ( 42) the intial value of age variable.
+
+1) to update the UI, we will call the (set) function with next State:-
+   function handleClick() {
+    setName('aditi')
+   }
+
+react will store the nextState value and whenever the handleClick() function run it will update the initial value with new which is (aditi); and update the UI

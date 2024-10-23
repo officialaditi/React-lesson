@@ -1,0 +1,8 @@
+        onChange event:-
+
+
+1) onChange event handler primarily used with form elemets.
+
+2) example:- <input>, <textarea>, <select>, <radio>
+
+3) it triggers a function every time the value of the input changes.

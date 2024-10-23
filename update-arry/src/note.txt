@@ -1,0 +1,34 @@
+Updating array in state...
+
+1) array are mutable(can change) in js, but we should treat them as immutable(can't change) when we store it on state.
+
+2) whenever we want to update the array stored inside the state we have to create the new one or ( make a copy of an exist one with(...spread operator))
+
+3) after that set the state to use the new array
+
+updating array without mutation:-
+
+1) use (concat, [...spread]) for adding 
+
+2) use (filter, slice) for removing
+
+3) use (map) for replacing or looping
+
+4) use (reverse, sort) for sorting but first copy the array
+
+Adding a array :-
+
+ ==> create a new array which will contain existing items and a new item at the end
+
+ ==> we can this by simply using (...spread operator) ...(what we wanna spread)
+
+ ==> don't just direactly update the array put it inside the update function and use it
+
+ ==> don't use the same name as state variable just take the 1st letter of the paramter and name it and spread that letter or variable to update and add
+
+
+ remove an array :-
+ 
+ ==> use the filter method to remove and array
+
+ ==> _(underscore) using this as parameter means the parameter is being passed to function is being ignored

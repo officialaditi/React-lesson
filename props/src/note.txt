@@ -1,0 +1,41 @@
+1) props means (properties) they are read-only properties that are shared between components
+
+2) we send the data from one component to other via properties
+
+3) A parent component can send data to a child component only 
+
+4) props are js objects
+
+5) we can use props by simply writing the props.{name of the varible we want } 
+ex:- without destructure
+const Worker = (props) => {
+  return (
+    <>
+      <h2>Name: {props.name}</h2>
+      <h2>Age: {props.age}</h2>
+      <h2>Job Role: {props.role}</h2>
+      <h2>isDeveloper: {props.isDeveloper ? 'yes': 'no'}</h2>
+    </>
+  );
+};
+
+6) or we can destructure the variable and use that variable instead of props.variableName this will concise the code and make it clean and easy to read
+ex:- with destructure
+const Worker = ({ name, age, role, isDeveloper }) => {
+  return (
+    <>
+      <h2>Name: {name}</h2>
+      <h2>Age: {age}</h2>
+      <h2>Job Role: {role}</h2>
+      <h2>isDeveloper: {isDeveloper ? "yes" : "no"}</h2>
+    </>
+  );
+};
+
+7) give an proptypes help us to debug the code
+
+8) default props = its an value for the props in case they are no value passed from the parent component 
+example:- name: "Guest"
+in the parent component for Job Role: - master student i have not pass the name value so it is using the default value that is guest.
+
+<component key = value/>

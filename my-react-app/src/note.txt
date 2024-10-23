@@ -1,0 +1,15 @@
+1) React is an Js Library used for build the ui of the website
+
+2) React are made out of components.
+
+3) Component:- components are the js function that accept the props and return the jsx. 
+components can be as small as button and as large as entire page.
+react components are javascript function that return markup (jsx);
+we can nest the component inside another component.
+component name should always be in captial letter
+
+4) JSX:- Javascript syntax extension or js xml which allow us to write HTML markup inside js code
+
+5) to write js inside the component we have to use curly braces {} so we can now use js inside the return statement of the component for normal js code we can write above the return statement.
+
+==> everything in the theory is show inside the examples.

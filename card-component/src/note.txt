@@ -1,0 +1,9 @@
+1) in HTML we give class to and tag and with the help of it we will style the component to do this in react we have to write className in (camelCase)
+
+2) className because in javascript class is an reserved word we can't use that to define the class to our tag so we will name as className in camelCase only
+
+3) we can use 1 component multiple time and it will display the same the time we call it
+
+4) for styling we have style in index.css file which is root file to style we have different method to style the component
+
+==> in this folder we made an card component and style it and repeat that card component 4 time.
